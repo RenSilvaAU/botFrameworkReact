@@ -1,0 +1,72 @@
+.AppFrame {
+
+  position: absolute;
+  bottom: 0px;
+  right:50px;
+  width: 550px;
+}
+
+.App-container {
+
+  position: relative;
+
+  @media (max-width: 720px) {
+    left: 0px;
+  }
+}
+.Bkg {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.ChatWindow {
+  position: absolute;
+  bottom: 0;
+  font-size: 0.8em;
+  background: lightgrey;
+  border: 1px solid #c9d6b2;
+  width: 550px;
+  height: 600px;
+  overflow: hidden;
+  z-index: 9999999999;
+
+
+  @media (max-width: 720px) {
+    width: 900vw;
+    height: 90vh;
+    border-left: none;
+    border-right: none;
+
+  }
+
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
